@@ -29,6 +29,7 @@ On HyperOS 4 the second finger cancels the drag instead. This LSPosed module res
 
 - Only injects into `system_server` and `com.android.systemui`.
 - Debug log: `adb logcat -s SmallWindowInputFilter:I`
+- Diagnostics build: every release also carries `io.github.zilewang7.smallwindow-debug-*-diag.apk`; it writes gesture decisions to `/data/system/smallwindow_filter.log` (root-readable) for issue reports
 - Source: https://github.com/zilewang7/HyperOS4SmallWindowInputFilter
 
 ## 简介
@@ -40,6 +41,7 @@ On HyperOS 4 the second finger cancels the drag instead. This LSPosed module res
 - 需要：Android 16+、LSPosed（libxposed API 102+）、Root
 - 安装：安装最新 Release 的 APK → LSPosed 中启用并勾选 `system` 作用域 → 重启
 - 日志：`adb logcat -s SmallWindowInputFilter:I`
+- 诊断版：每个 Release 附带 `io.github.zilewang7.smallwindow-debug-*-diag.apk`，手势决策写入 `/data/system/smallwindow_filter.log`（root 可读），反馈问题请附上该日志
 - 源码：https://github.com/zilewang7/HyperOS4SmallWindowInputFilter
 
 ## License
