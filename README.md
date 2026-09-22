@@ -20,7 +20,7 @@ On HyperOS 4 the second finger cancels the drag instead. This module uses the un
 - LSPosed IT 2.1.1+ with HYOS-spawner support (libxposed API 102)
 - Root (Magisk / APatch / KernelSU)
 
-Validated official MiuiHome builds on Xiaomi 17 Pro Max (`2509FPN0BC`): `801025361` / `RELEASE-8.01.02.5361-260807-08161657-R`, `801025459` / `RELEASE-8.01.02.5459-260807-08242024-R`, and `801026241` / `RELEASE-8.01.02.6241-260818-09051525-R`. Official launcher updates are matched by validated native behavior structure rather than a version whitelist; missing or ambiguous structures fail closed.
+Validated official MiuiHome builds on Xiaomi 17 Pro Max (`2509FPN0BC`): `801025361` / `RELEASE-8.01.02.5361-260807-08161657-R`, `801025459` / `RELEASE-8.01.02.5459-260807-08242024-R`, `801026241` / `RELEASE-8.01.02.6241-260818-09051525-R`, and `801027719` / `RELEASE-8.01.02.7719-260904-09181618-R`. Official launcher updates are matched by validated native behavior structure rather than a version whitelist; missing or ambiguous structures fail closed.
 
 Modified official ROMs and ported/custom ROMs are outside this project's support and issue-triage boundary. Report their runtime or gesture differences to the ROM maintainer.
 
@@ -43,7 +43,7 @@ Modified official ROMs and ported/custom ROMs are outside this project's support
 旧版系统上：拇指从底部上滑进入多任务并按住 → 食指按住任意位置 → 松开拇指，窗口在 180 ms 内平滑移动到食指位置 → 可继续移动食指调整位置，松开食指后挂成小窗。HyperOS 4 上第二指会取消拖拽，本模块通过 Zygisk Next 与 LSPosed IT 提供的统一 MiuiHome HYOS native runtime，将物理双指输入投影成连续的桌面单指拖拽流并逐帧完成换指。
 
 - 需要：官方 HyperOS 4 / Android 17、arm64-v8a、Zygisk Next 1.5.0+、LSPosed IT 2.1.1+（支持 HYOS spawner / libxposed API 102）、Root
-- 已在小米 17 Pro Max（`2509FPN0BC`）验证官方桌面：`801025361` / `RELEASE-8.01.02.5361-260807-08161657-R`、`801025459` / `RELEASE-8.01.02.5459-260807-08242024-R` 与 `801026241` / `RELEASE-8.01.02.6241-260818-09051525-R`
+- 已在小米 17 Pro Max（`2509FPN0BC`）验证官方桌面：`801025361` / `RELEASE-8.01.02.5361-260807-08161657-R`、`801025459` / `RELEASE-8.01.02.5459-260807-08242024-R`、`801026241` / `RELEASE-8.01.02.6241-260818-09051525-R` 与 `801027719` / `RELEASE-8.01.02.7719-260904-09181618-R`
 - 官方桌面更新按已验证的 native 行为结构匹配，不使用版本白名单；结构缺失或歧义时失败关闭
 - 官改包、移植包及其他第三方修改系统不在本项目的支持和问题受理范围内；请向对应系统维护者反馈
 - 安装：安装最新 Release 的 APK → LSPosed 中启用并勾选 `com.miui.home` 作用域 → 重启
